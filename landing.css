@@ -1,0 +1,67 @@
+.bottomlinks {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+.addressbar {
+	font-family: "Chasm Extended", Alor, "Comic Sans MS", Verdana;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.menuitems {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: left;
+}
+.menudesc {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+}
+.menulinks {
+
+	font-family: "Maiandra GD", "Comic Sans MS", "Times New Roman";
+	font-size: 18px;
+	font-weight: bolder;
+}
+.backtotop {
+
+
+	font-family: "Maiandra GD", "Comic Sans MS", "Times New Roman";
+	font-size: 12px;
+	font-weight: bolder;
+}
+.cabinlinks {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.bolder_print {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #C00;
+	text-align: center;
+}
+.mainHeading {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #C00;
+}
+#apDiv16 {
+	text-align: center;
+}
+#apDiv51 {
+	text-align: center;
+}
+#apDiv31 {
+	text-align: center;
+}

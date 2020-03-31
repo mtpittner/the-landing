@@ -1,0 +1,42 @@
+.bottomlinks {
+	font-family: "Chasm Extended", Alor, "Comic Sans MS", Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.addressbar {
+	font-family: "Chasm Extended", Alor, "Comic Sans MS", Verdana;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.menuitems {
+	font-family: "Maiandra GD", "Comic Sans MS", "Times New Roman";
+	font-size: 15px;
+	font-weight: bolder;
+}
+.menudesc {
+	font-family: "Maiandra GD", "Comic Sans MS", "Times New Roman";
+	font-size: 14px;
+	font-weight: normal;
+}
+.menulinks {
+
+	font-family: "Maiandra GD", "Comic Sans MS", "Times New Roman";
+	font-size: 18px;
+	font-weight: bolder;
+}
+.backtotop {
+
+
+	font-family: "Maiandra GD", "Comic Sans MS", "Times New Roman";
+	font-size: 12px;
+	font-weight: bolder;
+}
+.cabinlinks {
+
+
+	font-family: "Maiandra GD", "Comic Sans MS", "Times New Roman";
+	font-size: 18px;
+	font-weight: bolder;
+}

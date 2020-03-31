@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to the LCO Head Start & Early Head Start</title>
+		<!-- include jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		<script src="js/jquery.js"></script>
+		
+
+		<script>
+			//slideshow
+			$(function() {
+			$(".rslides").responsiveSlides({
+					auto: true, 
+					speed: 500,
+					timeout: 4000, 
+					nav: false,
+					pause: false,
+				});
+			});
+			
+			//Toggle for width display
+			var showWidth = 1;
+			
+			if(showWidth == 1) {
+				$(document).ready(function() {
+					$(window).resize(function() {
+						var width = $(window).width();
+						document.getElementById('output_width').innerHTML="Window Width:"+width.toString();					
+					});				
+				});			
+			}			
+		</script>
+		
+		
+		<script src="js/jquery.cycle.all.js"></script>
+		<script type="text/javascript">
+			$('#slider').cycle();
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">		
+		
+	</head>
+	
+	<body>
+		<div id="output_width"></div>
+		<div id="container">
+			<header class="main-header">
+				<img id="logo" src="images/logo.png" alt="LCO Head Start & Early Head Start" />
+				<nav class="main-nav">
+					<ul>
+						<li><a class="active" href="#">Home</a></li><li>
+							<a href="#">About Us<img src="images/droparrow.png" width="10" height="7"></a>
+					<ul>
+						<li><a href="#">What is Head Start?</a></li>
+						<li><a href="missionstatement.html">Mission Statement</a></li>
+						<li><a href="#">Enrollment</a></li>
+						<li><a href="annualreports.html">Annual Reports</a></li>
+                    </ul>
+						</li><li>
+							<a href="#">Services<img src="images/droparrow.png" width="10" height="7"></a>
+					<ul>
+						<li><a href="#">Center Based</a></li>
+						<li><a href="#">Home Based</a></li>
+						<li><a href="#">Education & Early Childhood Development</a></li>
+						<li><a href="#">Family & Community Partnerships</a></li>
+					</ul>
+						</li><li>
+							<a href="#">New & Events<img src="images/droparrow.png" width="10" height="7"></a>
+					<ul>
+						<li><a href="#">Announcements</a></li>
+						<li><a href="#">Calendars</a></li>
+						<li><a href="#">Menus</a></li>
+					</ul>
+            
+						</li><li>
+							<a href="#">Forms<img src="images/droparrow.png" width="10" height="7"></a>
+					<ul>
+						<li><a href="HSParentHandbook.pdf" target="_new">HS Parent Handbook</a></li>
+						<li><a href="EHSParentHandbook.pdf" target="_new">EHS Parent Handbook</a></li>
+						<li><a href="HSApplicationandEnrollment.pdf" target="_new">Head Start Enrollment Packet</a></li>
+						<li><a href="EHSEnrollmentApplication.pdf" target="_new">Early Head Start Enrollment Packet</a></li>
+						<li><a href="LCOHS-EHS_P&P.pdf" target="_new">HS & EHS Policies & Procedures</a></li>
+						<li><a href="The Administration for Children and Families Head Start Program.pdf" target="_new">Office of Head Start Performance Standards</a></li>         <li><a href="WIcodedcf.pdf" target="_new">WI State Code</a></li>
+						<li><a href="EmploymentApplication.pdf" target="_new">Employment Application</a></li>
+					</ul>
+            
+						</li><li>
+            
+						<a href="#">Contact Us<img src="images/droparrow.png" width="10" height="7"></a>
+					<ul>
+						<li><a href="#">Staff Directory</a></li>
+					</ul>
+            
+						</li><li>
+					</ul>
+				</nav>
+			</header>
+			
+			
+			<div id="main">
+			
+				   <div id="slider">
+						<ul class="rslides">
+							<li><img src="images/image1.jpg" alt="kids smiling"></li>
+							<li><img src="images/hs5a.png" alt="kids by police car"></li>
+							<li><img src="images/hs30a.png" alt="smiling child with flower"></li>
+							<li><img src="images/IMG1175.jpg" alt="child with dobbers"></li>
+							<li><img src="images/IMG1195.jpg" alt="children tracing their names"></li>
+							<li><img src="images/IMG1358.jpg" alt="teacher showing how to plant a flower"></li>
+							<li><img src="images/image7.jpg" alt="children with baby animals"></li>							
+						</ul>
+						
+					</div><!--end slider div -->
+			 
+
+				<div id="content">
+					<article class="art1">
+						<header class="art-header">
+							<h2 class="title">Announcements</h2>
+						</header>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt. Fusce rutrum sodales ante, eu egestas nunc facilisis nec. Fusce et ipsum aliquam ex finibus tempus at ac libero. </p>
+						
+							<p>Quisque in commodo neque. Integer ac tortor lorem. Curabitur et porttitor sapien. Praesent auctor posuere rutrum. Phasellus at ipsum non sapien pharetra ultricies. Vestibulum ut urna et enim posuere luctus ornare id orci.</p>
+						
+							<a class="readmore" href="#">Read more</a>
+						</article>
+					
+						<article class="art2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt. Fusce rutrum sodales ante, eu egestas nunc facilisis nec. Fusce et ipsum aliquam ex finibus tempus at ac libero. </p>
+						
+							<p>Quisque in commodo neque. Integer ac tortor lorem. Curabitur et porttitor sapien. Praesent auctor posuere rutrum. Phasellus at ipsum non sapien pharetra ultricies. Vestibulum ut urna et enim posuere luctus ornare id orci.</p>
+						
+							<a class="readmore" href="#">Read more</a>
+						</article>
+				</div>
+				
+				<aside id="sidebar">
+					<div class="block">
+						<h2>Upcoming Events</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt.</p>
+					</div>
+				</aside>
+			</div>
+			
+			<div class="clr"></div>
+			
+			<footer>
+				 8837 N Trepania Road - Hayward, WI 54843 &nbsp;&nbsp;| &nbsp;&nbsp;Phone - 715-634-8560 &nbsp;&nbsp;| &nbsp;&nbsp;Fax - 715-634-0011<br>
+                 &copy; 2018 Lac Courte Oreilles Head Start &amp; Early Head Start. All Rights Reserved<br>
+			</footer>
+			
+			
+		</div>
+	</body>
+</html>

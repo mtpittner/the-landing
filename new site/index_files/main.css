@@ -1,0 +1,200 @@
+body{
+	background: #882433 url(../images/sos.png) repeat;
+	font-size:87.5%;
+	font-family: arial, sans-serif;
+	line-height:1.7em;
+	text-align:left;
+	padding: 0;
+	margin: 0 auto;
+	
+}
+
+
+
+a{
+	text-decoration:none;
+	color:#781a26;
+}
+
+a:hover{
+	color:#666666;
+}
+
+h2{
+	color:#781a26;
+}
+
+.clr{
+	clear:both;
+}
+
+#container{
+	width:80%;
+	margin: 0 auto;
+	overflow:auto;
+	clear:both;
+}
+
+/*! http://responsiveslides.com v1.55 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+.main-header #logo{
+	display: block;
+	margin:0 auto;
+	position: relative;
+}
+
+.main-header .main-nav {
+	background:#882433;
+	width:100%;
+	height:40px;
+	border-radius:5px;
+	border: 1px #c13046 solid;
+}
+
+.main-header .main-nav ul {
+	list-style:none;
+	width:800px;
+	margin:0 auto;
+	padding:0;
+	
+}
+
+.main-header .main-nav li{
+	color: #333;
+	display: inline;
+	float: left;
+	margin-right: 3px;
+	position:relative;
+	z-index:1000;
+}
+
+.main-header .main-nav li a {
+	color:#ffffff;
+	display: inline-block;
+	padding: 10px 20px;
+	height:20px;
+}
+
+.main-header .main-nav li a:hover, .main-header .main-nav li a.active{
+	background:#efeadd;
+	color: #666666;
+	border-radius:5px;
+}
+
+
+.main-header .main-nav ul li img {
+	vertical-align:middle;
+	padding-left:10px;
+}
+
+
+.main-header .main-nav ul li:hover ul {
+	display:block;
+}
+
+.main-header .main-nav ul ul {
+	display:none;
+	position:absolute;
+	background-color:#882433;
+	border: 3px solid #c13046;
+	border-top-width:0;
+	min-width:200px;
+}
+
+.main-header .main-nav ul ul li {
+	display:block;
+	text-align:left;
+}
+
+.main-header .main-nav ul ul li a:hover {
+	color:#882433;
+	
+}
+
+#content {
+	width:70%;
+	float:left;
+	overflow:auto;
+}
+
+#content article {
+	border-radius:5px;
+	background:#ffffff;
+	overflow:auto;
+	padding:10px 20px;
+	margin-top:10px;
+}
+
+#content a.readmore{
+	display:block;
+	float: right;
+	color:#ffffff;
+	padding: 5px 9px;
+	background:#c13046;
+	border-radius:5px;
+}
+
+#content a.readmore:hover{
+	background:#000000;
+}
+
+#sidebar{
+	width:30%;
+	float:left;
+}
+
+#sidebar .block{
+	border-radius:5px;
+	background:#ffffff;
+	overflow:auto;
+	padding:10px 15px;
+	margin:10px 0 0 10px;
+}
+
+#footer{
+	background:#882433;
+	height:40px;
+	border: 1px solid #c13046;
+	margin-top:10px;
+	border-radius:5px;
+}
+
+#footer p{
+	color:#ffffff;
+	margin:0;
+	padding:10px;
+	text-align:center;
+}

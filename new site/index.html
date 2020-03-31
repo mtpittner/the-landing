@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Welcome to the LCO Landing</title>
+				<!-- include jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.cycle.all.js"></script>
+		
+		<script>
+			//slideshow
+			$(function() {
+				$(".rslides").responsiveSlides({
+					auto: true, 
+					speed: 500,
+					timeout: 4000,
+					pause: true
+				})
+			});
+		</script>
+			
+			<script>
+			//Toggle for width display
+			var showWidth = 1;
+			
+			if(showWidth == 1) {
+				$(document).ready(function() {
+					$(window).resize(function() {
+						var width = $(window).width();
+						document.getElementById('output_width').innerHTML="Window Width:"+width.toString();					
+					});				
+				});			
+			}			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">	
+		
+		
+	</head>
+	
+	<body style="">
+		<div id="output_width"></div>
+		<div id="container">
+			<header class="main-header">
+				<img id="logo" src="images/logo.png" alt="The LCO Landing on the Chippewa Flowage">
+				<nav class="main-nav">
+					<ul>
+						 <li><a href="#">Home</a></li>
+						 <li><a href="#">History</a></li>
+						 <li><a href="#">Restaurant</a></li>
+						 <li><a href="#">Menu</a></li>
+						 <li><a href="#">Cabins</a></li>
+						 <li><a href="#">Map</a></li>
+						 <li><a href="#">Links</a></li>
+						 <li><a href="#">Contact Us</a></li>			
+					</ul>
+				</nav>
+			</header>
+			
+			
+			<div id="main">				
+					
+				   <ul class="rslides">
+						<li><img src="images/image2.png" alt=""></li>
+						<li><img src="images/image3.png"alt=""></li>
+						<li><img src="images/image4.png" alt=""></li>
+						<li><img src="images/image5.png" alt=""></li>
+						<li><img src="images/image6.png" alt=""></li>
+						
+					</ul>
+					
+				<div id="content">
+					<article class="art1">
+						<header class="art-header">
+							<h2 class="title">Announcements</h2>
+						</header>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt. Fusce rutrum sodales ante, eu egestas nunc facilisis nec. Fusce et ipsum aliquam ex finibus tempus at ac libero. </p>
+						
+							<p>Quisque in commodo neque. Integer ac tortor lorem. Curabitur et porttitor sapien. Praesent auctor posuere rutrum. Phasellus at ipsum non sapien pharetra ultricies. Vestibulum ut urna et enim posuere luctus ornare id orci.</p>
+						
+							<a class="readmore" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Read more</a>
+						</article>
+					
+						<article class="art2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt. Fusce rutrum sodales ante, eu egestas nunc facilisis nec. Fusce et ipsum aliquam ex finibus tempus at ac libero. </p>
+						
+							<p>Quisque in commodo neque. Integer ac tortor lorem. Curabitur et porttitor sapien. Praesent auctor posuere rutrum. Phasellus at ipsum non sapien pharetra ultricies. Vestibulum ut urna et enim posuere luctus ornare id orci.</p>
+						
+							<a class="readmore" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Read more</a>
+						</article>
+				</div>
+				
+				<aside id="sidebar">
+					<div class="block">
+						<h2>Upcoming Events</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt.</p>
+					</div>
+				</aside>
+			</div>
+			
+			<div class="clr"></div>
+			
+			<footer>
+				 8255 N County Road CC - Hayward, WI 54843 &nbsp;&nbsp;| &nbsp;&nbsp;Phone - 715-462-3626 &nbsp;&nbsp;| &nbsp;&nbsp;Email - Landing01@centurytel.net<br>
+                 © 2018 The LCO Landing. All Rights Reserved<br>
+			</footer>
+			
+			
+		</div>
+	
+</body></html>

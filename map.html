@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>A Map to Find Us</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url(assets/background.jpg);
+}
+.style2 {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Fine Hand", Verdana, "Comic Sans MS";
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<meta name="" content="herman, herman's, landing, lco, cabins, lac courte oreilles, fishing,hermans landing,the landing">
+<meta name="keywords" content="the landing, lco, lac courte oreilles, herman's, hermans, herman's landing, chippewa flowage, cabins, fishing, landing-lco, reservation">
+<link href="landing.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.bodytext {	font-family: Papyrus;
+	font-size: 16px;
+	font-weight: bold;
+}
+#Layer1 {
+	position:absolute;
+	left:212px;
+	top:138px;
+	width:113px;
+	height:20px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:216px;
+	top:166px;
+	width:83px;
+	height:18px;
+	z-index:2;
+}
+-->
+</style></head>
+
+<body onLoad="MM_preloadImages('assets/homeup.jpg','assets/homedown2b.jpg','assets/historydown2b.jpg','assets/restaurantdown2b.jpg','assets/menudown2b.jpg','assets/cabinsdown2b.jpg','assets/mapdown2b.png','assets/linksdown2b.jpg','assets/contactusdown2b.jpg')">
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="2" height="1" valign="top"></td>
+    <td width="79" height="1" valign="top"></td>
+    <td width="46" height="1" valign="top"></td>
+    <td width="9" height="1" valign="top"></td>
+    <td width="4" height="1" valign="top"></td>
+    <td width="35" height="1" valign="top"></td>
+    <td width="16" height="1" valign="top"></td>
+    <td width="81" height="1" valign="top"></td>
+    <td width="4" height="1" valign="top"></td>
+    <td width="1" height="1" valign="top"></td>
+    <td width="76" height="1" valign="top"></td>
+    <td width="524" height="1" valign="top"></td>
+    <td width="92" height="1" valign="top"></td>
+    <td width="74" height="1" valign="top"></td>
+    <td width="47" height="1" valign="top"></td>
+    <td width="107" height="1" valign="top"></td>
+    <td width="2" height="1" valign="top"></td>
+    <td width="51" height="1" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="111" valign="top"></td>
+    <td width="79" height="111" valign="top"></td>
+    <td width="46" height="111" valign="top"></td>
+    <td width="9" height="111" valign="top"></td>
+    <td width="4" height="111" valign="top"></td>
+    <td width="35" height="111" valign="top"></td>
+    <td width="16" height="111" valign="top"></td>
+    <td width="81" height="111" valign="top"></td>
+    <td width="4" height="111" valign="top"></td>
+    <td width="1" height="111" valign="top"></td>
+    <td width="600" height="111" colspan="2" valign="top"><img src="assets/map.jpg" width="600" height="87"></td>
+    <td width="92" height="111" valign="top"></td>
+    <td width="74" height="111" valign="top"></td>
+    <td width="47" height="111" valign="top"></td>
+    <td width="107" height="111" valign="top"></td>
+    <td width="2" height="111" valign="top"></td>
+    <td width="51" height="111" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="23" valign="top"></td>
+    <td width="79" height="23" valign="top"></td>
+    <td width="46" height="23" valign="top"></td>
+    <td width="9" height="23" valign="top"></td>
+    <td width="4" height="23" valign="top"></td>
+    <td width="35" height="23" valign="top"></td>
+    <td width="16" height="23" valign="top"></td>
+    <td width="899" height="673" colspan="8" rowspan="2" valign="top"><img src="assets/mapprint.jpg" alt="Chippewa Flowage map" width="899" height="637"></td>
+    <td width="107" height="23" valign="top"></td>
+    <td width="2" height="23" valign="top"></td>
+    <td width="51" height="23" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="650" valign="top"></td>
+    <td width="173" height="650" colspan="5" valign="top"><table height="301" border="0" cellpadding="0" cellspacing="0" mm_noconvert="TRUE">
+      <tr>
+        <td><a href="index.htm" target="_top" onClick="MM_nbGroup('down','group1','home','assets/homedown2b.jpg',1)" onMouseOver="MM_nbGroup('over','home','assets/homedown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img src="assets/homeup2b.jpg" alt="Back to Home" name="home" width="173" height="32" border="0" onload=""></a></td>
+        </tr>
+      <tr>
+        <td><a href="history.html" target="_top" onClick="MM_nbGroup('down','group1','history','assets/historydown2b.jpg',1)" onMouseOver="MM_nbGroup('over','history','assets/historydown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="history" src="assets/historyup2b.jpg" border="0" alt="A Little History" onLoad=""></a></td>
+        </tr>
+      <tr>
+        <td><a href="restaurant.htm" target="_top" onClick="MM_nbGroup('down','group1','restaurant','assets/restaurantdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','restaurant','assets/restaurantdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="restaurant" src="assets/restaurantup2b.jpg" border="0" alt="The Restaurant" onLoad=""></a></td>
+        </tr>
+      <tr>
+        <td><a href="menu.htm" target="_top" onClick="MM_nbGroup('down','group1','menu','assets/menudown2b.jpg',1)" onMouseOver="MM_nbGroup('over','menu','assets/menudown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="menu" src="assets/menuup2b.jpg" border="0" alt="The Menu" onLoad=""></a></td>
+        </tr>
+      <tr>
+        <td><a href="cabins.html" target="_top" onClick="MM_nbGroup('down','group1','cabins','assets/cabinsdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','cabins','assets/cabinsdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="cabins" src="assets/cabinsup2b.jpg" border="0" alt="Rent Our Cabins" onLoad=""></a></td>
+        </tr>
+      <tr>
+        <td><a href="map.html" target="_top" onClick="MM_nbGroup('down','group1','map','assets/mapdown2b.png',1)" onMouseOver="MM_nbGroup('over','map','assets/mapdown2b.png','',1)" onMouseOut="MM_nbGroup('out')"><img name="map" src="assets/mapup2b.jpg" border="0" alt="How to Find Us" onLoad=""></a></td>
+        </tr>
+      <tr>
+        <td><a href="links.htm" target="_top" onClick="MM_nbGroup('down','group1','links','assets/linksdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','links','assets/linksdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="links" src="assets/linksup2b.jpg" border="0" alt="Links to Other Great Places" onLoad=""></a></td>
+        </tr>
+      <tr>
+        <td><a href="contact.htm" target="_top" onClick="MM_nbGroup('down','group1','contactus','assets/contactusdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','contactus','assets/contactusdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="contactus" src="assets/contactusup2b.jpg" border="0" alt="Contact Us" onLoad=""></a></td>
+        </tr>
+    </table></td>
+    <td width="16" height="650" valign="top"></td>
+    <td width="107" height="650" valign="top"></td>
+    <td width="2" height="650" valign="top"></td>
+    <td width="51" height="650" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="134" valign="top"></td>
+    <td width="79" height="134" valign="top"></td>
+    <td width="46" height="134" valign="top"></td>
+    <td width="9" height="134" valign="top"></td>
+    <td width="4" height="134" valign="top"></td>
+    <td width="1059" height="134" colspan="12" valign="top">      <div align="center">
+        <p class="cabinlinks"><u>EASY TO FIND </u></p>
+        <div align="left">
+          <p><u class="menuitems">From the South:</u> &nbsp;<span class="menuitems">Take I-90 to Osseo interchange. &nbsp;Follow County 'R' north to Augusta. &nbsp;There, take Hwy. 27 north to the village of Radisson. &nbsp;Turn north on Co 'H' and follow to Co 'CC', turn right and continue to The Landing. </span></p>
+          <p><span class="menuitems"><u>From the North</u></span><u>:</u> &nbsp;<span class="menuitems">From Hayward, take Hwy 'B' east for 15 miles to Hwy. 'CC', then follow 'CC' south for 5 miles to The Landing.</span></p>
+        </div>
+      </div></td>
+    <td width="51" height="134" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="179" valign="top"></td>
+    <td width="79" height="179" valign="top"></td>
+    <td width="46" height="179" valign="top"></td>
+    <td width="9" height="179" valign="top"></td>
+    <td width="1061" height="179" colspan="12" valign="top">
+      <p align="center" class="menuitems">For a larger, printable view of this map, <a href="mapprint.pdf">click here</a> and 
+      click the 'Print' icon on your browser window.</p>
+      <p align="center"><span class="menuitems">The larger map  is viewable in Acrobat Reader .pdf format. &nbsp;Acrobat reader is a free application downloadable from adobe. &nbsp;If you need Acrobat Reader, click the &quot;Adobe Reader&quot; icon below to download. </span></p>      <p align="center"><a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank"><img src="assets/get_adobe_reader.gif" width="88" height="31" border="0"></a></p></td>
+    <td width="2" height="179" valign="top"></td>
+    <td width="51" height="179" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="22" valign="top"></td>
+    <td width="79" height="22" valign="top"></td>
+    <td width="46" height="22" valign="top"></td>
+    <td width="9" height="22" valign="top"></td>
+    <td width="4" height="22" valign="top"></td>
+    <td width="35" height="22" valign="top"></td>
+    <td width="16" height="22" valign="top"></td>
+    <td width="81" height="22" valign="top"></td>
+    <td width="4" height="22" valign="top"></td>
+    <td width="1" height="22" valign="top"></td>
+    <td width="76" height="22" valign="top"></td>
+    <td width="616" height="22" colspan="2" valign="top">      <div align="center"><a href="index.htm">Home</a> | &nbsp;<a href="history.html">History</a> &nbsp;| &nbsp;<a href="restaurant.htm">Restaurant</a> &nbsp;| &nbsp;<a href="menu.htm">Menu</a> &nbsp;| &nbsp;<a href="cabins.html">Cabins</a> &nbsp;| &nbsp;<a href="map.html">Map</a> &nbsp;| &nbsp;<a href="links.htm">Links</a> | &nbsp;<a href="contact.htm">Contact Us</a> &nbsp;</div>
+    </td>
+    <td width="74" height="22" valign="top"></td>
+    <td width="47" height="22" valign="top"></td>
+    <td width="107" height="22" valign="top"></td>
+    <td width="2" height="22" valign="top"></td>
+    <td width="51" height="22" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="35" valign="top"></td>
+    <td width="79" height="35" valign="top"></td>
+    <td width="46" height="35" valign="top"></td>
+    <td width="1123" height="35" colspan="15" valign="top">      <hr></td>
+  </tr>
+  <tr>
+    <td width="2" height="1" valign="top"></td>
+    <td width="79" height="1" valign="top"></td>
+    <td width="46" height="1" valign="top"></td>
+    <td width="9" height="1" valign="top"></td>
+    <td width="4" height="1" valign="top"></td>
+    <td width="35" height="1" valign="top"></td>
+    <td width="16" height="1" valign="top"></td>
+    <td width="81" height="1" valign="top"></td>
+    <td width="4" height="1" valign="top"></td>
+    <td width="767" height="129" colspan="5" rowspan="2" valign="top">      <p align="center" class="addressbar">The Landing - LCO Resort&nbsp; | &nbsp;8225N County Road CC &nbsp;| &nbsp;Hayward, Wisconsin 54843 <br>
+        Phone: &nbsp;715.462.3626 &nbsp;Fax: &nbsp;715-462-3655</p></td>
+    <td width="47" height="1" valign="top"></td>
+    <td width="107" height="1" valign="top"></td>
+    <td width="2" height="1" valign="top"></td>
+    <td width="51" height="1" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="128" valign="top"></td>
+    <td width="79" height="128" valign="top"></td>
+    <td width="191" height="128" colspan="6" valign="top"><!-- #BeginLibraryItem "/Library/copyright.lbi" -->
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Comic Sans MS", Verdana;
+	font-size: 8px;
+	font-weight: bold;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+
+<p class="style1">Copyright 2006 - 2015 &copy; The Landing <br>
+  Lac Courte Oreilles<br>
+  Last updated April 26, 2015<br>
+  Email <a href="mailto:crow_heart@yahoo.com">Webmaster</a></p>
+<!-- #EndLibraryItem --></td>
+    <td width="4" height="128" valign="top"></td>
+    <td width="47" height="128" valign="top"></td>
+    <td width="107" height="128" valign="top"></td>
+    <td width="2" height="128" valign="top"></td>
+    <td width="51" height="128" valign="top"></td>
+  </tr>
+  <tr>
+    <td width="2" height="1" valign="top"><img src="transparent.gif" alt="" width="2" height="1"></td>
+    <td width="79" height="1" valign="top"><img src="transparent.gif" alt="" width="79" height="1"></td>
+    <td width="46" height="1" valign="top"><img src="transparent.gif" alt="" width="46" height="1"></td>
+    <td width="9" height="1" valign="top"><img src="transparent.gif" alt="" width="9" height="1"></td>
+    <td width="4" height="1" valign="top"><img src="transparent.gif" alt="" width="4" height="1"></td>
+    <td width="35" height="1" valign="top"><img src="transparent.gif" alt="" width="35" height="1"></td>
+    <td width="16" height="1" valign="top"><img src="transparent.gif" alt="" width="16" height="1"></td>
+    <td width="81" height="1" valign="top"><img src="transparent.gif" alt="" width="81" height="1"></td>
+    <td width="4" height="1" valign="top"><img src="transparent.gif" alt="" width="4" height="1"></td>
+    <td width="1" height="1" valign="top"><img src="transparent.gif" alt="" width="1" height="1"></td>
+    <td width="76" height="1" valign="top"><img src="transparent.gif" alt="" width="76" height="1"></td>
+    <td width="524" height="1" valign="top"><img src="transparent.gif" alt="" width="524" height="1"></td>
+    <td width="92" height="1" valign="top"><img src="transparent.gif" alt="" width="92" height="1"></td>
+    <td width="74" height="1" valign="top"><img src="transparent.gif" alt="" width="74" height="1"></td>
+    <td width="47" height="1" valign="top"><img src="transparent.gif" alt="" width="47" height="1"></td>
+    <td width="107" height="1" valign="top"><img src="transparent.gif" alt="" width="107" height="1"></td>
+    <td width="2" height="1" valign="top"><img src="transparent.gif" alt="" width="2" height="1"></td>
+    <td width="51" height="1" valign="top"><img src="transparent.gif" alt="" width="51" height="1"></td>
+  </tr>
+</table>
+</body>
+</html>

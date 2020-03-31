@@ -1,0 +1,249 @@
+2<html>
+	<head>
+		<style>
+			body{
+				margin: 0;
+			}
+			canvas{
+				width: 100%;
+				height: 100%
+			}
+		</style>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js"></script>
+		
+	</head>
+	<body>
+		<script>
+			
+			var manualControl = false;
+			var longitude = 0;
+			var latitude = 0;
+			var savedX;
+			var savedY;
+			var savedLongitude;
+			var savedLatitude;
+			
+			// panoramas background
+			var panoramasArray = ["c1livingroom.jpg"];
+			var panoramaNumber = Math.floor(Math.random()*panoramasArray.length);
+ 
+			// setting up the renderer
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			
+			// creating a new scene
+			var scene = new THREE.Scene();
+			
+			// adding a camera
+			var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+			camera.target = new THREE.Vector3(0, 0, 0);
+ 
+			// creation of a big sphere geometry
+			var sphere = new THREE.SphereGeometry(100, 100, 40);
+			sphere.applyMatrix(new THREE.Matrix4().makeScale(-1, 1, 1));
+ 
+			// creation of the sphere material
+			var sphereMaterial = new THREE.MeshBasicMaterial();
+			sphereMaterial.map = THREE.ImageUtils.loadTexture(panoramasArray[panoramaNumber])
+ 
+			// geometry + material = mesh (actual object)
+			var sphereMesh = new THREE.Mesh(sphere, sphereMaterial);
+			scene.add(sphereMesh);
+ 
+			// listeners
+			document.addEventListener("mousedown", onDocumentMouseDown, false);
+			document.addEventListener("mousemove", onDocumentMouseMove, false);
+			document.addEventListener("mouseup", onDocumentMouseUp, false);
+				
+               render();
+               
+               function render(){
+				
+				requestAnimationFrame(render);
+				
+				if(!manualControl){
+					longitude += 0.1;
+				}
+ 
+				// limiting latitude from -85 to 85 (cannot point to the sky or under your feet)
+                    latitude = Math.max(-85, Math.min(85, latitude));
+ 
+				// moving the camera according to current latitude (vertical movement) and longitude (horizontal movement)
+				camera.target.x = 500 * Math.sin(THREE.Math.degToRad(90 - latitude)) * Math.cos(THREE.Math.degToRad(longitude));
+				camera.target.y = 500 * Math.cos(THREE.Math.degToRad(90 - latitude));
+				camera.target.z = 500 * Math.sin(THREE.Math.degToRad(90 - latitude)) * Math.sin(THREE.Math.degToRad(longitude));
+				camera.lookAt(camera.target);
+ 
+				// calling again render function
+				renderer.render(scene, camera);
+				
+			}
+			
+			// when the mouse is pressed, we switch to manual control and save current coordinates
+			function onDocumentMouseDown(event){
+ 
+				event.preventDefault();
+ 
+				manualControl = true;
+ 
+				savedX = event.clientX;
+				savedY = event.clientY;
+ 
+				savedLongitude = longitude;
+				savedLatitude = latitude;
+ 
+			}
+ 
+			// when the mouse moves, if in manual contro we adjust coordinates
+			function onDocumentMouseMove(event){
+ 
+				if(manualControl){
+					longitude = (savedX - event.clientX) * 0.1 + savedLongitude;
+					latitude = (event.clientY - savedY) * 0.1 + savedLatitude;
+				}
+ 
+			}
+ 
+			// when the mouse is released, we turn manual control off
+			function onDocumentMouseUp(event){
+ 
+				manualControl = false;
+ 
+			}
+			
+			// pressing a key (actually releasing it) changes the texture map
+			document.onkeyup = function(event){
+			
+				panoramaNumber = (panoramaNumber + 1) % panoramasArray.length
+				sphereMaterial.map = THREE.ImageUtils.loadTexture(panoramasArray[panoramaNumber])
+			
+    			}
+			
+		</script>
+	</body>
+</html>
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+	

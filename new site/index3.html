@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Welcome to the LCO Landing</title>
+		<!-- include jQuery -->
+		<script src="./index3_files/jquery.min.js.download"></script>
+		<script src="./index3_files/responsiveslides.min.js.download"></script>
+		<script src="./index3_files/jquery.js.download"></script>
+		
+
+		<script>
+			//slideshow
+			$(function() {
+			$(".rslides").responsiveSlides({
+					auto: true, 
+					speed: 500,
+					timeout: 4000, 
+					nav: false,
+					pause: false,
+				});
+			});
+			
+			//Toggle for width display
+			var showWidth = 1;
+			
+			if(showWidth == 1) {
+				$(document).ready(function() {
+					$(window).resize(function() {
+						var width = $(window).width();
+						document.getElementById('output_width').innerHTML="Window Width:"+width.toString();					
+					});				
+				});			
+			}			
+		</script>
+		
+		
+		<script src="./index3_files/jquery.cycle.all.js.download"></script>
+		<script type="text/javascript">
+			$('#slider').cycle();
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="./index3_files/main.css">		
+		
+	</head>
+	
+	<body style="">
+		<div id="output_width"></div>
+		<div id="container">
+			<header class="main-header">
+				<img id="logo" src="./index3_files/logo.png" alt="The LCO Landing on the Chippewa Flowage">
+				<nav class="main-nav">
+					<ul>
+						<li><#>Home</a></li>
+						<li><a class="active"#">History</a></li>
+						<li><a class="active" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Restaurant</a></li>
+						<li><a class="active" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Menu</a></li>
+						<li><a class="active" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Cabins</a></li>
+						<li><a class="active" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Map</a></li>
+						<li><a class="active" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Links</a></li>
+						<li><a class="active" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Contact Us</a></li>				
+					</ul>
+				</nav>
+			</header>
+			
+			
+			<div id="main">
+			
+				   <div id="slider">
+						<ul class="rslides">
+							<li><img src="images/image1.png" alt="kids smiling"></li>
+							<li><img src="images/image2.png" alt="kids by police car"></li>
+							<li><img src="images/image3.png" alt="smiling child with flower"></li>
+							<li><img src="images/image4.png" alt="child with dobbers"></li>
+							<li><img src="images/image5.png" alt="children tracing their names"></li>
+							<li><img src="images/image6.png" alt="teacher showing how to plant a flower"></li>						
+						</ul>
+						
+					</div><!--end slider div -->
+			 
+
+				<div id="content">
+					<article class="art1">
+						<header class="art-header">
+							<h2 class="title">Announcements</h2>
+						</header>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt. Fusce rutrum sodales ante, eu egestas nunc facilisis nec. Fusce et ipsum aliquam ex finibus tempus at ac libero. </p>
+						
+							<p>Quisque in commodo neque. Integer ac tortor lorem. Curabitur et porttitor sapien. Praesent auctor posuere rutrum. Phasellus at ipsum non sapien pharetra ultricies. Vestibulum ut urna et enim posuere luctus ornare id orci.</p>
+						
+							<a class="readmore" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Read more</a>
+						</article>
+					
+						<article class="art2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt. Fusce rutrum sodales ante, eu egestas nunc facilisis nec. Fusce et ipsum aliquam ex finibus tempus at ac libero. </p>
+						
+							<p>Quisque in commodo neque. Integer ac tortor lorem. Curabitur et porttitor sapien. Praesent auctor posuere rutrum. Phasellus at ipsum non sapien pharetra ultricies. Vestibulum ut urna et enim posuere luctus ornare id orci.</p>
+						
+							<a class="readmore" href="file:///C:/Users/Michele/Documents/Websites/the%20landing/new%20site/index3.html#">Read more</a>
+						</article>
+				</div>
+				
+				<aside id="sidebar">
+					<div class="block">
+						<h2>Upcoming Events</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque lectus, feugiat id placerat vel, laoreet et sem. Cras ac massa vel eros vestibulum tincidunt.</p>
+					</div>
+				</aside>
+			</div>
+			
+			<div class="clr"></div>
+			
+			<footer>
+				 8837 N Trepania Road - Hayward, WI 54843 &nbsp;&nbsp;| &nbsp;&nbsp;Phone - 715-634-8560 &nbsp;&nbsp;| &nbsp;&nbsp;Fax - 715-634-0011<br>
+                 © 2018 Lac Courte Oreilles Head Start &amp; Early Head Start. All Rights Reserved<br>
+			</footer>
+			
+			
+		</div>
+	
+</body></html>

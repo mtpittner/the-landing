@@ -1,0 +1,804 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>The Landing Menu</title>
+<meta name="" content="herman, herman's, landing, lco, cabins, lac courte oreilles, fishing,hermans landing,the landing">
+<meta name="keywords" content="the landing, lco, lac courte oreilles, herman's, hermans, herman's landing, chippewa flowage, cabins, fishing, landing-lco, reservation">
+<link href="landing.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+//-->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-image: url(assets/background.jpg);
+}
+-->
+</style>
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer27 {
+	position:absolute;
+	left:389px;
+	top:2120px;
+	width:282px;
+	height:25px;
+	z-index:60;
+}
+#Layer35 {
+	position:absolute;
+	left:266px;
+	top:2150px;
+	width:508px;
+	height:50px;
+	z-index:61;
+}
+#Layer60 {
+	position:absolute;
+	left:217px;
+	top:2934px;
+	width:639px;
+	height:90px;
+	z-index:62;
+}
+#Layer61 {
+	position:absolute;
+	left:485px;
+	top:2877px;
+	width:132px;
+	height:50px;
+	z-index:63;
+}
+#Layer5 {
+	position:absolute;
+	left:218px;
+	top:2300px;
+	width:624px;
+	height:466px;
+	z-index:64;
+}
+#Layer8 {
+	position:absolute;
+	left:250px;
+	top:387px;
+	width:25px;
+	height:26px;
+	z-index:65;
+}
+#Layer9 {
+	position:absolute;
+	left:200px;
+	top:787px;
+	width:29px;
+	height:29px;
+	z-index:66;
+}
+#Layer17 {
+	position:absolute;
+	left:200px;
+	top:950px;
+	width:29px;
+	height:31px;
+	z-index:67;
+}
+#Layer20 {
+	position:absolute;
+	left:250px;
+	top:1200px;
+	width:35px;
+	height:32px;
+	z-index:68;
+}
+#Layer21 {
+	position:absolute;
+	left:250px;
+	top:1350px;
+	width:37px;
+	height:36px;
+	z-index:69;
+}
+#Layer13 {
+	position:absolute;
+	left:250px;
+	top:1768px;
+	width:50px;
+	height:32px;
+	z-index:70;
+}
+#Layer24 {
+	position:absolute;
+	left:250px;
+	top:1986px;
+	width:50px;
+	height:29px;
+	z-index:71;
+}
+#Layer25 {
+	position:absolute;
+	left:250px;
+	top:2117px;
+	width:50px;
+	height:33px;
+	z-index:72;
+}
+#Layer30 {
+	position:absolute;
+	left:209px;
+	top:2152px;
+	width:49px;
+	height:37px;
+	z-index:73;
+}
+#Layer33 {
+	position:absolute;
+	left:214px;
+	top:2234px;
+	width:44px;
+	height:50px;
+	z-index:74;
+}
+#Layer34 {
+	position:absolute;
+	left:200px;
+	top:2882px;
+	width:50px;
+	height:43px;
+	z-index:75;
+}
+#apDiv23 {
+	position: absolute;
+	width: 364px;
+	height: 51px;
+	z-index: 49;
+	left: 347px;
+	top: 134px;
+	font-size: 40px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv31 {
+	position: absolute;
+	width: 415px;
+	height: 80px;
+	z-index: 50;
+	left: 824px;
+	top: 132px;
+	font-size: 45px;
+	color: #C00;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+#apDiv9 {
+	position: absolute;
+	width: 278px;
+	height: 18px;
+	z-index: 51;
+	left: 407px;
+	top: 190px;
+}
+#apDiv1 {
+	position: absolute;
+	width: 118px;
+	height: 48px;
+	z-index: 52;
+	left: 959px;
+	top: 566px;
+}
+#apDiv5 {
+	position: absolute;
+	width: 451px;
+	height: 204px;
+	z-index: 53;
+	left: 830px;
+	top: 618px;
+}
+#apDiv8 {
+	position: absolute;
+	width: 268px;
+	height: 63px;
+	z-index: 54;
+	left: 394px;
+	top: 1002px;
+}
+#apDiv10 {
+	position: absolute;
+	width: 571px;
+	height: 393px;
+	z-index: 55;
+	left: 236px;
+	top: 1070px;
+}
+#apDiv6 {
+	position: absolute;
+	width: 403px;
+	height: 107px;
+	z-index: 56;
+	left: 320px;
+	top: 1475px;
+}
+#apDiv7 {
+	position: absolute;
+	width: 566px;
+	height: 722px;
+	z-index: 57;
+	left: 234px;
+	top: 1588px;
+}
+#apDiv4 {
+	position: absolute;
+	width: 421px;
+	height: 56px;
+	z-index: 58;
+	left: 293px;
+	top: 2317px;
+}
+#apDiv11 {
+	position: absolute;
+	width: 589px;
+	height: 49px;
+	z-index: 59;
+	left: 176px;
+	top: 3103px;
+}
+#apDiv12 {
+	position: absolute;
+	width: 559px;
+	height: 115px;
+	z-index: 60;
+	left: 224px;
+	top: 2936px;
+}
+#apDiv13 {
+	position: absolute;
+	width: 512px;
+	height: 50px;
+	z-index: 61;
+	left: 258px;
+	top: 2538px;
+}
+#apDiv14 {
+	position: absolute;
+	width: 452px;
+	height: 72px;
+	z-index: 62;
+	left: 284px;
+	top: 2946px;
+}
+#apDiv16 {
+	position: absolute;
+	width: 571px;
+	height: 81px;
+	z-index: 63;
+	left: 225px;
+	top: 3028px;
+	text-align: center;
+}
+#apDiv17 {
+	position: absolute;
+	width: 445px;
+	height: 101px;
+	z-index: 64;
+	left: 272px;
+	top: 2489px;
+	text-align: center;
+}
+#apDiv18 {
+	position: absolute;
+	width: 523px;
+	height: 115px;
+	z-index: 65;
+	left: 239px;
+	top: 2602px;
+}
+#apDiv20 {
+	position: absolute;
+	width: 571px;
+	height: 210px;
+	z-index: 66;
+	left: 224px;
+	top: 3136px;
+	text-align: center;
+}
+#apDiv21 {
+	position: absolute;
+	width: 296px;
+	height: 47px;
+	z-index: 67;
+	left: 884px;
+	top: 834px;
+}
+#apDiv22 {
+	position: absolute;
+	width: 407px;
+	height: 213px;
+	z-index: 68;
+	left: 833px;
+	top: 888px;
+	text-align: left;
+}
+#apDiv24 {
+	position: absolute;
+	width: 239px;
+	height: 50px;
+	z-index: 69;
+	left: 904px;
+	top: 1114px;
+}
+#apDiv26 {
+	position: absolute;
+	width: 406px;
+	height: 218px;
+	z-index: 70;
+	left: 838px;
+	top: 1173px;
+}
+#apDiv27 {
+	position: absolute;
+	width: 248px;
+	height: 47px;
+	z-index: 71;
+	left: 898px;
+	top: 1405px;
+}
+#apDiv28 {
+	position: absolute;
+	width: 448px;
+	height: 328px;
+	z-index: 72;
+	left: 837px;
+	top: 1464px;
+}
+#apDiv30 {
+	position: absolute;
+	width: 132px;
+	height: 43px;
+	z-index: 73;
+	left: 526px;
+	top: 509px;
+	text-align: left;
+}
+#apDiv32 {
+	position: absolute;
+	width: 580px;
+	height: 343px;
+	z-index: 74;
+	left: -15px;
+	top: 356px;
+}
+#apDiv33 {
+	position: absolute;
+	width: 103px;
+	height: 22px;
+	z-index: 75;
+	left: 732px;
+	top: 519px;
+}
+#apDiv36 {
+	position: absolute;
+	width: 122px;
+	height: 23px;
+	z-index: 73;
+	left: 0px;
+	top: 227px;
+}
+#apDiv37 {
+	position: absolute;
+	width: 567px;
+	height: 115px;
+	z-index: 73;
+	left: 832px;
+	top: 2216px;
+}
+#apDiv40 {
+	position: absolute;
+	width: 132px;
+	height: 23px;
+	z-index: 74;
+	left: -608px;
+	top: -195px;
+}
+#apDiv44 {
+	position: absolute;
+	width: 568px;
+	height: 368px;
+	z-index: 74;
+	left: 832px;
+	top: 2633px;
+}
+#apDiv49 {
+	position: absolute;
+	width: 125px;
+	height: 22px;
+	z-index: 75;
+	left: 1056px;
+	top: 3032px;
+}
+#apDiv50 {
+	position: absolute;
+	width: 568px;
+	height: 169px;
+	z-index: 76;
+	left: 829px;
+	top: 3060px;
+}
+#apDiv51 {
+	position: absolute;
+	width: 564px;
+	height: 72px;
+	z-index: 77;
+	left: 833px;
+	top: 3328px;
+}
+#apDiv34 {
+	position: absolute;
+	width: 564px;
+	height: 512px;
+	z-index: 78;
+	left: 838px;
+	top: 3398px;
+}
+#apDiv38 {
+	position: absolute;
+	width: 133px;
+	height: 21px;
+	z-index: 75;
+	left: 193px;
+	top: 333px;
+}
+#apDiv41 {
+	position: absolute;
+	width: 108px;
+	height: 24px;
+	z-index: 79;
+	left: 1037px;
+	top: 2191px;
+}
+#apDiv42 {
+	position: absolute;
+	width: 124px;
+	height: 22px;
+	z-index: 80;
+	left: 1039px;
+	top: 2608px;
+}
+-->
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('assets/homeup.jpg','assets/homedown2b.jpg','assets/historydown2b.jpg','assets/restaurantdown2b.jpg','assets/menudown2b.jpg','assets/cabinsdown2b.jpg','assets/mapdown2b.png','assets/linksdown2b.jpg','assets/contactusdown2b.jpg','assets/menuup2b.jpg')">
+<div id="apDiv2" style="position: absolute; left: 623px; top: 21px; width: 261px; height: 79px; z-index: 2"><img src="assets/ourmenu.jpg" width="261" height="79"></div>
+<div id="apDiv3" style="position: absolute; left: 30px; top: 131px; width: 173px; height: 301px; z-index: 3"><table height="301" border="0" cellpadding="0" cellspacing="0" mm_noconvert="TRUE">
+      <tr>
+        <td><a href="index.htm" target="_top" onClick="MM_nbGroup('down','group1','home','assets/homedown2b.jpg',1)" onMouseOver="MM_nbGroup('over','home','assets/homedown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img src="assets/homeup2b.jpg" alt="Back to Home" name="home" width="173" height="32" border="0" onload=""></a></td>
+    </tr>
+      <tr>
+        <td><a href="history.html" target="_top" onClick="MM_nbGroup('down','group1','history','assets/historydown2b.jpg',1)" onMouseOver="MM_nbGroup('over','history','assets/historydown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="history" src="assets/historyup2b.jpg" border="0" alt="A Little History" onLoad=""></a></td>
+    </tr>
+      <tr>
+        <td><a href="restaurant.htm" target="_top" onClick="MM_nbGroup('down','group1','restaurant','assets/restaurantdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','restaurant','assets/restaurantdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="restaurant" src="assets/restaurantup2b.jpg" border="0" alt="The Restaurant" onLoad=""></a></td>
+    </tr>
+      <tr>
+        <td><a href="menu.htm" target="_top" onClick="MM_nbGroup('down','group1','menu','assets/menudown2b.jpg',1)" onMouseOver="MM_nbGroup('over','menu','assets/menudown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="menu" src="assets/menudown2b.jpg" border="0" alt="The Menu" onLoad="MM_nbGroup('init','group1','menu','assets/menuup2b.jpg',1)"></a></td>
+    </tr>
+      <tr>
+        <td><a href="cabins.html" target="_top" onClick="MM_nbGroup('down','group1','cabins','assets/cabinsdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','cabins','assets/cabinsdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="cabins" src="assets/cabinsup2b.jpg" border="0" alt="Rent Our Cabins" onLoad=""></a></td>
+    </tr>
+      <tr>
+        <td><a href="map.html" target="_top" onClick="MM_nbGroup('down','group1','map','assets/mapdown2b.png',1)" onMouseOver="MM_nbGroup('over','map','assets/mapdown2b.png','',1)" onMouseOut="MM_nbGroup('out')"><img name="map" src="assets/mapup2b.jpg" border="0" alt="How to Find Us" onLoad=""></a></td>
+    </tr>
+      <tr>
+        <td><a href="links.htm" target="_top" onClick="MM_nbGroup('down','group1','links','assets/linksdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','links','assets/linksdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="links" src="assets/linksup2b.jpg" border="0" alt="Links to Other Great Places" onLoad=""></a></td>
+    </tr>
+      <tr>
+        <td><a href="contact.htm" target="_top" onClick="MM_nbGroup('down','group1','contactus','assets/contactusdown2b.jpg',1)" onMouseOver="MM_nbGroup('over','contactus','assets/contactusdown2b.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="contactus" src="assets/contactusup2b.jpg" border="0" alt="Contact Us" onLoad=""></a></td>
+    </tr>
+    </table></div>
+<div class="mainHeading" id="apDiv23"><span class="mainHeading">good morning</span><br>
+</div>
+<div class="mainHeading" id="apDiv31">salad
+  platters<br>
+<span class="bolder_print"><span class="bolder_print">$13.00 each</span></span> </div>
+<div id="apDiv15" style="position: absolute; left: 828px; top: 214px; width: 468px; height: 347px; z-index: 15">
+  <p><span class="bottomlinks">Dressings:</span> <span class="menudesc">1000 Island, Blue Cheese, Ranch, French, Raspberry Vinaigrette, Low Fat French or Ranch </span></p>
+  <p><span class="menuitems">Chef&nbsp;</span> <span class="menudesc">Turkey, ham, bacon, cheese, tomato, cucumber, onion, boiled egg and croutons.</span></p>
+  <p><span class="menuitems">Steak</span> <span class="menudesc">6 oz.  sirloin, American fries, mushroom, onion, tomato, cucumber, and croutons.</span></p>
+  <p><span class="menuitems">Grilled Chicken</span><span class="menudesc"> Craisins, mandarin oranges, cucumbers, cheddar cheese, and croutons</span>.</p>
+  <p><span class="menuitems">Taco Salad </span><span class="menudesc">Seasoned  beef or chicken, tomatoes, black olives, and cheese. Jalapenos, sour cream, and salsa on the side.</span></p>
+  <p><span class="menuitems">Lodge Side Salad</span><span class="menudesc">...</span><span class="menuitems">$6.50</span>&nbsp;</p>
+</div>
+<div class="mainHeading" id="apDiv1">soup</div>
+<div id="apDiv19" style="position: absolute; left: 24px; top: 860px; width: 200px; height: 202px; z-index: 19"><img src="assets/littlegirlfish.png" alt="Little girl with fish" width="200" height="202"></div>
+<div class="mainHeading" id="apDiv8">appetizers</div>
+<div id="apDiv20">
+  <p><span class="mainHeading">Friday Fish Fry </span><br>
+    <span class="menuitems">All you can eat</span><span class="menudesc"> fried or broiled, biscuits, coleslaw and potato...</span><span class="menuitems">$13.50</span><br>
+    <br>
+  <span class="menuitems">Take-out</span><span class="menudesc"> has three fillets and sides...</span><span class="menuitems">$11.50
+  <br>
+  <br>
+  Mini Fish Fry</span> <span class="menudesc">Two fillets and sides...</span><span class="menuitems">$8.99</span><br>
+  </p>
+</div>
+<div id="apDiv25" style="position: absolute; left: 234px; top: 2376px; width: 549px; height: 153px; z-index: 25">
+  <p><span class="menuitems">14 inch Cheese</span><span class="menudesc">...</span><span class="menuitems">$15.00</span> <span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheese with one topping</span><span class="menudesc">...</span><span class="menuitems">$19.00</span></p>
+  <p><span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whatchya want on it?</span><span class="menudesc">...</span><span class="menuitems">$26.00</span></p>
+  <p><span class="bottomlinks">Choices:</span> <span class="menudesc">Canadian bacon, sausage, pepperoni, chicken, mushrooms, onions, green peppers, black olives, diced pineapple. </span><span class="bottomlinks">Choice of pizza or Alfredo sauce.</span></p>
+</div>
+<div id="apDiv29" style="position: absolute; left: 224px; top: 2595px; width: 571px; height: 338px; z-index: 29">
+  <p align="left" class="menudesc">&nbsp;<span class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Served with soup and salad, potato, veggie and bread basket</span></p>
+  <p align="left" class="menudesc"><span class="menuitems">Fresh Water Walleye</span> &quot;A pan fried Wisconsin favorite&quot;...<span class="menuitems">$27.00</span></p>
+  <p align="left" class="menudesc"><span class="menuitems">Shrimp</span> Eight deep fried jumbo breaded fantailed...<span class="menuitems">$24.00</span></p>
+  <p align="left" class="menudesc"><span class="menuitems">Steaks</span> - <span class="menuitems">Rib Eye</span>...<span class="menuitems">$25.00</span> <span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;Sirloin</span>...<span class="menuitems">$22.00 </span><span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add 4 shrimp</span>...<span class="menuitems">$8.00</span><br>
+  Grilled by open flame and topped with sauteed mushrooms and onions.<br>
+  <span class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;Extra time required for well done. </span></p>
+  <p align="left" class="menudesc"><span class="menuitems">Fish &amp; Chips</span> 4 lightly seasoned breaded cod, coleslaw &amp; fries...<span class="menuitems">$17.00</span></p>
+  <p align="left" class="menudesc"><span class="menuitems">Meat Loaf </span>Thick sliced and smothered in gravy. Mashed potatoes, veggie...<span class="menuitems">$13.00</span></p>
+  <p align="left" class="menudesc"><span class="menuitems">Chicken or Shrimp Alfredo</span> Creamy parmesan sauce over pasta topped with broccoli...<span class="menuitems">$19.00</span></p>
+</div>
+<div id="apDiv35" style="position: absolute; left: 656px; top: 3398px; width: 425px; height: 226px; z-index: 35">
+  <p class="bolder_print">Native American Expo Special</p>
+  <p class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="bolder_print">Wednesdays - 
+  6:30 - 8:00 PM</span></p>
+  <p class="bolder_print">Indian taco - $7.00</p>
+  <p class="bolder_print">Mid-June to Mid-August </p>
+  <p class="bolder_print">&nbsp;</p>
+</div>
+<div class="mainHeading" id="apDiv21">sweet stuff</div>
+<div id="apDiv39" style="position: absolute; left: 238px; top: 227px; width: 574px; height: 561px; z-index: 39"><div align="center" class="menudesc">
+    <p>Start with a <strong class="menuitems">Bloody Mary</strong> (it's a meal) <span class="menuitems">$7.00</span> or <span class="menuitems"><strong>Mimosa</strong></span> orange or cranberry <span class="menuitems">$7.00</span><br>
+      <span class="menuitems">Toast choices</span>: White, Wheat, Sour Dough, Marble Rye or English Muffin.        </p>
+      </div>      <p class="menuitems"><span class="menuitems">Northwood's</span> <span class="menudesc">One hearty blueberry pancake, 2 eggs, 2 bacon, 2 sausage, American fries and toast...</span>$12.00</p>
+      <p class="menuitems">Eggs Benedict <span class="menudesc">Hollandaise sauce over poached eggs and smoked ham on English muffin and side of American fries...</span>$11.00   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Half order $6.50</p>
+      <p class="menuitems">Omelets  &nbsp; <span class="bottomlinks">create your own</span> &nbsp;<span class="bolder_print">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;omelets served all day!<br>
+  </span><span class="menudesc">Choose</span> <span class="menudesc">bacon, smoked ham, sausage, onions, tomatoes, mushrooms, black olives, green peppers, spinach. One choice of Cheddar, Swiss, or Monterray Jack cheese. Served with American fries and toast...</span>$11.00</p>
+      <p class="menuitems">Skillet <span class="menudesc">Eggs, American fries, green pepper, onion scrambled with one choice of bacon, ham, or sausage. Topped with a blend of shredded Cheddar and Monterray Jack cheese, with toast...</span>$10.50      </p>
+      <p class="menuitems">Two Eggs Your Way<span class="menudesc"> Served with American fries, and toast...</span>$7.50 &#8226; <span class="menudesc">Add bacon, smoked ham, or sausage...</span>$3.00 each &#8226; <span class="menudesc">6 oz. sirloin steak...</span> $7.00</p>
+      <p class="menuitems">Buttermilk Pancakes <span class="menudesc">Three big  fluffy cakes...</span>$6.50<br>
+        <br>
+        French Toast <span class="menudesc">Two thick slices of egg bread, grilled to perfection with vanilla and cinnamon. Served with a side of praline........</span>$6.50<br>
+      <span class="bottomlinks">Add whipped cream with  blueberries and strawberries for $2.00</span></p>
+      <p class="menuitems">Eggwich <span class="menudesc">One egg, Cheddar cheese, choice of bacon, ham or sausage stacked stacked on toast...</span>$6.50      </p>
+      <p class="menuitems">Oatmeal <span class="menudesc">Toast, a side of , brown sugar, and milk</span><span class="menudesc">...</span>$6.50</p>
+      <p class="menuitems">Vanilla Yogurt <span class="menudesc">Layered with strawberries and blueberries...</span>$5.50</p>
+      <p class="menuitems"><span class="menuitems">Sunrise </span><span class="menudesc">One  egg cooked your way and one fluffy pancake...</span><span class="menuitems">$4.50</span><br>
+        <br>
+        <span class="menuitems">SmallMouth Breakfast $7.00        </span> <span class="bottomlinks">&nbsp;&nbsp;&nbsp;10 &amp; Under<br>
+        </span><span class="menudesc">Choose three: French toast, pancake, egg, bacon, sausage, oatmeal, toast, vanilla yogurt or mandarin orange slices. Served with a beverage. <br>
+        </span></p>
+</div>
+<div class="mainHeading" id="apDiv14">smallmouth meals<br>
+<span class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age ten and under...$5.95 </span></div>
+<div id="apDiv45" style="position: absolute; left: 603px; top: 3643px; width: 516px; height: 19px; z-index: 45"><span class="bottomlinks"><a href="index.htm">Home</a> | &nbsp;<a href="history.html">History</a> &nbsp;| &nbsp;<a href="restaurant.htm">Restaurant</a> &nbsp;| &nbsp;<a href="menu.htm">Menu</a> &nbsp;| &nbsp;<a href="cabins.html">Cabins</a> &nbsp;| &nbsp;<a href="map.html">Map</a> &nbsp;| &nbsp;<a href="links.htm">Links</a> | &nbsp;<a href="contact.htm">Contact Us</a></span> &nbsp;</div>
+<div id="apDiv46" style="position: absolute; left: 427px; top: 3670px; width: 853px; height: 2px; z-index: 46; line-height: 2px"><hr></div>
+<div id="apDiv47" style="position: absolute; left: 371px; top: 3707px; width: 188px; height: 95px; z-index: 47"><!-- #BeginLibraryItem "/Library/copyright.lbi" -->
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Comic Sans MS", Verdana;
+	font-size: 8px;
+	font-weight: bold;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+
+<p class="style1">Copyright 2006 - 2015 &copy; The Landing <br>
+  Lac Courte Oreilles<br>
+  Last updated April 26, 2015<br>
+  Email <a href="mailto:crow_heart@yahoo.com">Webmaster</a></p>
+<!-- #EndLibraryItem --></div>
+<div id="apDiv48" style="position: absolute; left: 593px; top: 3713px; width: 564px; height: 34px; z-index: 48"><p align="center" class="addressbar">The Landing - LCO Resort&nbsp; | &nbsp;8225N County Road CC &nbsp;| &nbsp;Hayward, Wisconsin 54843 <br>
+      Phone: &nbsp;715.462.3626 &nbsp;Fax: &nbsp;715.462.3655</p></div>
+<div class="bottomlinks" id="apDiv9">Breakfast served until 11:30 A.M.</div>
+<div id="apDiv5">
+  <p class="menuitems">Wild Rice, Cream of Chicken, or Chili with cheese and onion garnish<br>
+  <span class="menudesc">Cup with crackers</span>...<span class="menuitems">$5.00<br>
+  </span><span class="menudesc">Bowl with Bread</span>...<span class="menuitems">$7.00</span></p>
+<p><span class="menuitems">Combo* Cup of Soup and Lodge Salad</span>...<span class="menuitems">$10.00<br>
+</span><span class="menuitems">Combo Cup of Soup and Half Sandwich</span> Grilled ham or turkey with cheese...<span class="menuitems">$10.00</span></p>
+</div>
+<div id="apDiv10">
+  <p><span class="menuitems">White Cheddar Cheese</span> <span class="menuitems">Curds</span> <span class="menudesc">Wisconsin's own...</span><span class="menuitems">$9.50</span><br>
+  </p>
+  <p><span class="menuitems">Walleye Nuggets</span> <span class="menudesc">A Wisconsin favorite...</span><span class="menuitems">$9.50</span></p>
+  <p><span class="menuitems">Quesadilla</span> <span class="menudesc">A flour tortilla, seasoned chicken and cheese...</span><span class="menuitems">$10.50</span></p>
+  <p><span class="menuitems">Nachos Supreme</span> <span class="menudesc">Seasoned ground beef, cheese, black olives, and tomatoes. Jalapenos, salsa, and sour cream, cheese dip served on the side....</span><span class="menuitems">$12.50</span>  </p>
+  <p><span class="menuitems">Onion Rings</span>...<span class="menuitems">$9.00</span> &nbsp;  &nbsp;&nbsp;<span class="menuitems"> Fries</span>...<span class="menuitems">$6.00</span> <span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chili Fries</span>...<span class="menuitems">$9.00</span></p>
+  <p><span class="menuitems">Sampler</span> <span class="menudesc">Walleye nuggets, shrimp, chicken strips, cheese curds &amp; fries...</span><span class="menuitems">$16.50</span></p>
+  <p><span class="menuitems">Shrimp</span> <span class="menudesc">Breaded shrimp with fries &amp; cocktail sauce...</span><span class="menuitems">$13.50</span></p>
+  <p><span class="menuitems">Chicken Strips</span> <span class="menudesc">4 tasty golden breaded strips with fries...</span><span class="menuitems">$11.50</span></p>
+  <p><span class="menuitems">Wing Dings</span> <span class="menudesc">Crispy golden breading and juicy flavor with fries...</span><span class="menuitems">$11.50</span></p>
+</div>
+<div class="mainHeading" id="apDiv6">hearty flowage <br>
+&nbsp;&nbsp;&nbsp;&nbsp;sandwiches</div>
+<div id="apDiv7">
+  <p align="center" class="bottomlinks">Served with pickle and your choice of fries, onion rings, or lodge salad.</p>
+  <p align="center" class="menuitems">The Landing Burger <span class="bottomlinks">Whatchya want on it?</span> <span class="menudesc">Bacon, lettuce, tomato, onion (raw or fried), mushrooms, jalapenos, Swiss, Monterray Jack, or American cheese on a grilled bun...</span>$11.50</p>
+  <p align="center" class="menuitems">Cheddar Cheese Burger...$9.00</p>
+  <p align="center" class="menuitems">Lake Chip Philly <span class="menudesc">Tender sliced sirloin, grilled bell peppers, onions and cheese piled on a grilled hoagie. Served with a side of Au jus...</span>$11.00</p>
+  <p align="center" class="menuitems">Big Chip Dog <span class="menudesc">Two quarter pound dogs with chili, shredded cheddar cheese and onions on the side...</span>$11.00 &nbsp;&nbsp;&nbsp;&nbsp;*Half order $6.00</p>
+  <p align="center" class="menuitems">Walleye <span class="menudesc">Golden battered mouth watering fillet with lettuce and tomato on a grilled hoagie...</span>$12.00</p>
+  <p align="center" class="menuitems">Reuben <span class="menudesc">Corned beef, Swiss cheese, sauerkraut, 1000 Island in grilled rye...</span>$10.50</p>
+  <p align="center" class="menuitems">Anglers Huge Turkey Club <span class="menudesc">Turkey, bacon, lettuce, tomato, Monterray Jack cheese and mayo stacked on toasted sour dough or wheat bread...</span>$12.00 &nbsp;&nbsp;&nbsp;*Half order $7.00</p>
+  <p align="center" class="menuitems">Grilled Seasoned Chicken <span class="menudesc">Monterray Jack cheese, lettuce, tomato on a grilled bun, side of mayo...</span>$11.00</p>
+  <p align="center" class="menuitems">Meat Loaf <span class="menudesc">Old fashion with green peppers, onions and brown sugar ketchup glaze on a grilled bun...</span>$10.00</p>
+  <p align="center" class="menuitems">The Garden <span class="menudesc">Lettuce, tomato, cucumber, onion, black olives. Monterray Jack or Swiss cheese, mayo on sour dough or wheat...</span>$9.00</p>
+  <p align="center" class="menuitems">BLT <span class="menudesc">Bacon, lettuce, tomato and mayo on sour dough or wheat toast...</span>$9.00</p>
+  <p align="center" class="menuitems">Grilled Cheddar, Monterey &amp; Swiss Cheese <span class="menudesc">On your choice of sour dough or wheat bread...</span>$9.00</p>
+</div>
+<div class="mainHeading" id="apDiv4">home baked pizza</div>
+<div class="mainHeading" id="apDiv13">largemouth dinners</div>
+<div id="apDiv16"><span class="bolder_print">&nbsp;Choose one:</span><br>
+  <span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 Mini Burgers</span> <span class="menuitems">&#8226; Mac &amp; Cheese Pasta</span><br>
+  <span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corn Dog</span> <span class="menuitems">&#8226;</span> <span class="menuitems">2 Chicken Strips</span><br>
+<span class="bottomlinks">Served with fries or salad, beverage and 
+dish of cookie for dessert
+</span></div>
+<div id="apDiv22">
+  <p><span class="menuitems">Iced Cinnamon Roll</span> <span class="menudesc">with butter...</span><span class="menuitems">$4.00</span></p>
+  <p><span class="menuitems">Carrot Cake</span> <span class="menudesc">Locally made...</span><span class="menuitems">$6.00</span></p>
+  <p><span class="menuitems">Brownie</span> <span class="menudesc">with fudge frosting...</span><span class="menuitems">$4.00</span></p>
+  <p><span class="menuitems">Brownie Turtle</span> <span class="menudesc">a la mode...</span><span class="menuitems">$6.00</span></p>
+  <p><span class="menuitems">Cheesecake or Lemon Bars...$2.50</span><span class="menuitems"></span></p>
+</div>
+<div class="mainHeading" id="apDiv24">ice cream</div>
+<div id="apDiv26">
+  <p><span class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ask your server for flavors</span><br>
+    <span class="menuitems">Cake Cone or Dish</span><br>
+    <span class="menudesc">One scoop...</span><span class="menuitems">$3.00</span> <span class="menuitems">&#8226;</span> <span class="menudesc">Two Scoops...</span><span class="menuitems">$4.00</span></p>
+  <p><span class="menuitems">Sundae:</span> <span class="menudesc">Syrup, whipped cream and a cherry</span><br>
+    <span class="menudesc">One Scoop...</span><span class="menuitems">$4.00</span><span class="menudesc"><br>
+    Two Scoops...</span><span class="menuitems">$6.00</span><br>
+  <span class="menuitems">Syrups:</span> <span class="menudesc">Chocolate, caramel, strawberry. Add pecans </span><span class="menuitems">.75</span></p>
+</div>
+<div class="mainHeading" id="apDiv27">beverages</div>
+<div id="apDiv28">
+  <p class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beer, Wine, &amp; Spirits available.</p>
+  <p class="menudesc"><span class="menuitems">The Landing's Coffee</span>...<span class="menuitems">$2.25</span><br>
+  A gourmet blend, freshly ground</p>
+  <p class="menudesc"><span class="menuitems">Hot Tea, Hot Chocolate, 2% Milk</span> (white or chocolate)...<span class="menuitems">$2.25</span></p>
+  <p class="menudesc"><span class="menuitems">Juice</span>...<span class="menuitems">$2.25</span><br>
+  Apple, Orange, Grapefruit, Cranberry, Tomato</p>
+  <p><span class="menuitems">Sodas</span><span class="menudesc">...</span><span class="menuitems">$2.25</span><span class="menudesc"><br>
+    Coke Products, Unsweetened Iced Tea, Lemonade
+  </span></p>
+  <div id="apDiv32">
+    <p><span class="menuitems">&#8226; Miller High Life, Miller Lite, MGD 64, Redd's Apple</span></p>
+    <p>      <span class="menuitems">&#8226;</span> <span class="menuitems">Budweiser, Bud Light, Bud Light Lime</span></p>
+    <p><span class="menuitems">&#8226;</span> <span class="menuitems">Michelob Golden Draft Light</span>, <span class="menuitems">Michelob Ultra</span></p>
+    <p><span class="menuitems">&#8226;</span> <span class="menuitems">Mike's Hard Lemonade, Black Cherry</span></p>
+    <p><span class="menuitems">&#8226;</span> <span class="menuitems">Leinenkugel's Original, Honeyweiss, Summer Shady, Red</span></p>
+    <p><span class="menuitems">&#8226;</span> <span class="menuitems">Corona</span> <span class="menuitems">&#8226;</span> <span class="menuitems">Busch Light</span> <span class="menuitems">&#8226;</span> <span class="menuitems">Coors Light</span>    <span class="menuitems">&#8226;</span> <span class="menuitems">O'Doul's</span></p>
+    <p><span class="menuitems">&#8226;</span> <span class="menuitems">New Glarus Spotted Cow, Totally Naked</span></p>
+    <p class="menuitems">ON TAP - Stella, Shocktop, Goose Island, Blue Moon</p>
+  </div>
+  <div class="bolder_print" id="apDiv38">bottled beer</div>
+  <p><br>
+</p>
+</div>
+<div id="apDiv37">
+  <p><span class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glass   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bottle</span><br>
+    <span class="menuitems">Smoking Loon Syrah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.00  &nbsp;&nbsp;&nbsp;$22.00</span><span class="menudesc"><br>
+    Bluberry and strawberry jam flavors wrapped around rich French oak.
+  </span></p>
+  <p class="menudesc"><span class="menuitems">Columbia Crest Two Vines Merlot  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.00&nbsp;&nbsp;&nbsp; $22.00</span><br>
+  Expressions of vanilla and strawberry jam, spice flavors round out a silky finish.</p>
+  <p class="menudesc"><span class="menuitems">Chateau Ste. Michelle Cabernet Sauvignon&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$8.00 &nbsp;&nbsp;&nbsp;$26.00</span><br>
+  Expressive blackberry and black fruit characteristics; a touch of floral.  </p>
+  <p class="menudesc"><span class="menuitems">Cupcake Pinot Noir &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.00 &nbsp; &nbsp;$22.00</span><br>
+  Aroma of cherries carries through, with a touch of red currants; hint of spice.</p>
+  <p class="menudesc"><span class="menuitems">Kenwood Cabernet Sauvignon  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;$8.00 &nbsp;&nbsp;&nbsp;&nbsp;$26.00</span><br>
+  Deep, dense, ripe with opulent flavors of black cherry, plum; hint of earthiness.</p>
+  <p class="menudesc"><span class="menuitems">Sutter Home Merlot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6.00</span><br>
+  Fresh black cherry aroma, hints of tobacco and herbal spice, medium-bodied.<br>
+  </p>
+</div>
+<div id="apDiv44">
+  <p><span class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glass   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bottle</span><br>
+    <span class="menuitems">Trinity Oaks Chardonnay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.00  &nbsp;&nbsp;&nbsp;$20.00</span><span class="menudesc"><br>
+      Bursting with topical fruit flavors and green apple aromas; crisp, clean finish.</span></p>
+  <p class="menudesc"><span class="menuitems">Cavit Pinot Grigio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.00&nbsp;&nbsp;&nbsp; &nbsp; $20.00</span><br>
+  A crisp, light character, appealing fruit flavors and refreshing scents.</p>
+  <p class="menudesc"><span class="menuitems">Kendall-Jackson Vintner's Reserve Chardonnay $7.00 &nbsp;&nbsp;&nbsp;$22.00</span><br>
+  Topical flavors such as mango and pineapple, with aromas of peach, apple, and pear.</p>
+  <p class="menudesc"><span class="menuitems">Robert Mondavi Reisling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.00 &nbsp;&nbsp; &nbsp;$20.00</span><br>
+  Refreshing floral, melon, and peach notes and crisp, lightly sweet flavors.</p>
+  <p class="menudesc"><span class="menuitems">Sutter Home Chardonnay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6.00 &nbsp; &nbsp;</span><br>
+    Smooth, round texture, and rich, creamy , peach and apple flavors.</p>
+  <p class="menudesc"><span class="menuitems">J. Roget Champagne</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="menuitems">$7.00</span><br>
+    Aromas of apple and pear with a bouquet of toasty, yeast notes; floral nuances.
+  </p>
+</div>
+<div class="bolder_print" id="apDiv49">blush wines</div>
+<div id="apDiv50">
+  <p><span class="bottomlinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glass   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bottle</span><br>
+    <span class="menuitems">Beringer White Zinfandel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6.00  &nbsp;&nbsp;&nbsp;$20.00</span><span class="menudesc"><br>
+      Red berry, citrus and melon aromas and flavors, subtle hints of nutmeg, clove.</span></p>
+  <p class="menudesc"><span class="menuitems">Sutter Home White Zinfandel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6.00&nbsp;&nbsp;&nbsp;</span><br>
+  Fresh and lively, bursting with fruit with a refreshing crisp finish.</p>
+  <p class="menudesc"><span class="menuitems">Moscoto</span> Pink or White <span class="menuitems">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$7.00</span></p>
+</div>
+<div class="bolder_print" id="apDiv41">red wines</div>
+<div class="bolder_print" id="apDiv42">white wines</div>
+</body>
+</html>
